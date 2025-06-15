@@ -1,12 +1,8 @@
-|🕵️ Sleuth – Metadatenanalyse & Forensik Toolkit|
-|---|
-
 | ![Status](https://img.shields.io/badge/status-stable-brightgreen?style=flat-square)| ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)| ![License](https://img.shields.io/badge/license-private-important?style=flat-square) | ![HTML](https://img.shields.io/badge/html-5-E34F26?style=flat-square&logo=html5&logoColor=white) |![CSS](https://img.shields.io/badge/css-3-1572B6?style=flat-square&logo=css3&logoColor=white) |![JavaScript](https://img.shields.io/badge/javascript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)|![Node.js](https://img.shields.io/badge/node.js-18.x-339933?style=flat-square&logo=nodedotjs&logoColor=white) |
 |---|---|---|---|---|---|---|
 
 | ![Python](https://img.shields.io/badge/python-3.12-3776AB?style=flat-square&logo=python&logoColor=white) | ![Portable Python](https://img.shields.io/badge/portable%20python-enabled-informational?style=flat-square) | ![npm](https://img.shields.io/badge/npm-enabled-CB3837?style=flat-square&logo=npm) |![Interface](https://img.shields.io/badge/interface-html%2Fjs-lightgrey?style=flat-square)|![Theme](https://img.shields.io/badge/theme-dark%2Flight%20%2B%20neon-9c27b0?style=flat-square)|![Export](https://img.shields.io/badge/export-JSON%2FCSV%2FPDF-yellow?style=flat-square)|
 |---|---|---|---|---|---|
-
 
 |![PDF Export](https://img.shields.io/badge/pdf-jsPDF-green?style=flat-square)|![Proxy](https://img.shields.io/badge/proxy-required-orange?style=flat-square)|![JS Libraries](https://img.shields.io/badge/libs-exifr%2Fjspdf%2Fchart.js-blueviolet?style=flat-square)|![EXIF Reader](https://img.shields.io/badge/EXIF-powered%20by%20exifr-informational?style=flat-square)|
 |---|---|---|---|
