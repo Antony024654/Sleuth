@@ -98,7 +98,7 @@ py312\python.exe -m pip install pillow piexif
 ```
 
 > Falls get-pip.py fehlt, lade hier herunter:
-  - [👉DOWNLOAD - ](https://bootstrap.pypa.io/get-pip.py)
+  - [👉DOWNLOAD - get-pip](https://bootstrap.pypa.io/get-pip.py)
 
 <br>
 
