@@ -215,6 +215,12 @@ http://localhost:3000/proxy?url=https://example.com
 | `/py312/`   | 🐍 Portable Python 3.12 inkl. Pip & Pillow  |
 | Root (`/`)  | 📄 `index.html`, `style.css`, `script.js`   |
 
+<br>
+
+---
+
+<br>
+
 > 🧩 Optional: Erweiterungen
 - 📍 GeoMap (Leaflet)
 - 📈 Timeline (Chart.js)
