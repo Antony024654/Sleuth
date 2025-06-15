@@ -18,7 +18,8 @@
 |🕵️ Sleuth – Metadatenanalyse & Forensik Toolkit|
 |---|
 
-- ✅ Sleuth ist ein vollständig Online/Offline Web-Toolkit zur Analyse von Metadaten aus Bildern, Webseiten und Dokumenten. 
+- ✅ Sleuth ist ein vollständig Web-Toolkit zur Analyse von Metadaten aus Bildern, Webseiten und Dokumenten.
+- ✅ Online/Offline
 - ✅ Inklusive EXIF-Analyse, URL-Scan, Exportfunktionen und visueller Darstellung.
 
 <br>
