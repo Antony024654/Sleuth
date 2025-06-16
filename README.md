@@ -9,7 +9,7 @@
 
 <br>
 
-|🕵️ Sleuth – Metadatenanalyse & Forensik Toolkit|
+|🕵️Sleuth – Metadatenanalyse🔍 & Forensik Toolkit🧰|
 |---|
 
 - ✅ Sleuth ist ein vollständig Web-Toolkit zur Analyse von Metadaten aus Bildern, Webseiten und Dokumenten.
