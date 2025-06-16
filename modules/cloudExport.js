@@ -1,0 +1,1 @@
+// cloudExport.js – Modulstruktur vorhanden (Logik folgt)

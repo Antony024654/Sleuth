@@ -1,0 +1,1 @@
+// videoMeta.js – Modulstruktur vorhanden (Logik folgt)

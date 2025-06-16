@@ -1,0 +1,1 @@
+// langToggle.js – Modulstruktur vorhanden (Logik folgt)

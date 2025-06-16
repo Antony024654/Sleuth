@@ -1,0 +1,1 @@
+// hashCompare.js – Modulstruktur vorhanden (Logik folgt)

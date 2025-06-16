@@ -1,0 +1,1 @@
+// aiModule.js – Modulstruktur vorhanden (Logik folgt)

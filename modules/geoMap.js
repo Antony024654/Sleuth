@@ -1,0 +1,1 @@
+// geoMap.js – Modulstruktur vorhanden (Logik folgt)

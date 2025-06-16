@@ -1,0 +1,1 @@
+// terminal.js – Modulstruktur vorhanden (Logik folgt)

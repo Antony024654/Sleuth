@@ -1,0 +1,1 @@
+// timeline.js – Modulstruktur vorhanden (Logik folgt)

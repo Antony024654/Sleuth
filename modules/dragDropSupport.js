@@ -1,0 +1,1 @@
+// dragDropSupport.js – Modulstruktur vorhanden (Logik folgt)

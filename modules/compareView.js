@@ -1,0 +1,1 @@
+// compareView.js – Modulstruktur vorhanden (Logik folgt)

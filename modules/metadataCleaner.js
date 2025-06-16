@@ -1,0 +1,1 @@
+// metadataCleaner.js – Modulstruktur vorhanden (Logik folgt)

@@ -1,0 +1,1 @@
+// exifDiff.js – Modulstruktur vorhanden (Logik folgt)

@@ -1,0 +1,1 @@
+// workspace.js – Modulstruktur vorhanden (Logik folgt)
