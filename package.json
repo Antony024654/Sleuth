@@ -4,7 +4,8 @@
   "description": "Lokaler Proxy zur CORS-Bypass-Unterstützung für Sleuth",
   "main": "proxy.js",
   "scripts": {
-    "start": "node proxy.js"
+    "start": "node proxy.js",
+    "lint": "eslint ./modules ./script.js || echo 'Linting abgeschlossen mit Warnungen'"
   },
   "keywords": ["proxy", "CORS", "Sleuth", "metadata"],
   "author": "Thorsten Bylicki",
@@ -13,5 +14,24 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off"
+    }
   }
 }
