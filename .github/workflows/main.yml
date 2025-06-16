@@ -27,12 +27,13 @@ jobs:
             echo "⚠️ Keine package.json gefunden – npm install übersprungen"
           fi
 
-      - name: 🔧 ESLint Fix ausführen
+      - name: ✅ ESLint Syntaxprüfung (robust)
         run: |
-          npx eslint ./modules ./script.js --fix || true
-            echo "✅ Lint erfolgreich"
+          if command -v npx >/dev/null 2>&1 && [ -f package.json ]; then
+            echo "🔍 Linting gestartet..."
+            npx eslint ./modules ./script.js || echo '⚠️ ESLint abgeschlossen mit Fehlern'
           else
-            echo "⚠️ Linting abgeschlossen mit Warnungen oder Fehlern"
+            echo "⛔ ESLint konnte nicht ausgeführt werden – npx oder package.json fehlen"
           fi
 
       - name: 🧪 HTML Validierung
@@ -41,9 +42,10 @@ jobs:
           root: .
           log_level: WARNING
 
-      # Optional: Baustein für späteres Build
-      # - name: 🛠️ Build Step (optional)
-      #   run: npm run build || echo "Build nicht konfiguriert"
+      # Optional: Lint-Autofix (nur wenn du Fixes zulassen willst)
+      # - name: 🔧 ESLint Autofix (optional)
+      #   run: |
+      #     npx eslint ./modules ./script.js --fix || true
 
       - name: 📄 Ergebnisübersicht
         run: echo "✅ Sleuth CI abgeschlossen"
