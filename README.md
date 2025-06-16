@@ -1,3 +1,6 @@
+| ![Build](https://img.shields.io/badge/build-dynamic-orange?style=flat-square&logo=github-actions) | ![Lint](https://img.shields.io/badge/lint-optional-informational?style=flat-square&logo=eslint) |
+|---|---|
+
 | ![Status](https://img.shields.io/badge/status-stable-brightgreen?style=flat-square)| ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)| ![License](https://img.shields.io/badge/license-private-important?style=flat-square) | ![HTML](https://img.shields.io/badge/html-5-E34F26?style=flat-square&logo=html5&logoColor=white) |![CSS](https://img.shields.io/badge/css-3-1572B6?style=flat-square&logo=css3&logoColor=white) |![JavaScript](https://img.shields.io/badge/javascript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)|![Node.js](https://img.shields.io/badge/node.js-18.x-339933?style=flat-square&logo=nodedotjs&logoColor=white) |
 |---|---|---|---|---|---|---|
 
