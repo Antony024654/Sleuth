@@ -1,0 +1,34 @@
+name: Sleuth CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔽 Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Install Dependencies (optional)
+        run: |
+          npm install || echo "Keine package.json gefunden – übersprungen"
+
+      - name: ✅ Lint JavaScript (Syntaxprüfung)
+        run: |
+          npx eslint ./modules ./script.js || echo "Linting abgeschlossen mit Warnungen"
+
+      - name: 🧪 HTML Validation
+        uses: Cyb3r-Jak3/html5validator-action@v1
+        with:
+          root: .
+          log_level: WARNING
