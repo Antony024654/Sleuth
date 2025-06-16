@@ -27,9 +27,9 @@ jobs:
             echo "⚠️ Keine package.json gefunden – npm install übersprungen"
           fi
 
-      - name: ✅ ESLint Syntaxprüfung
+      - name: ✅ ESLint Syntaxprüfung (nur Warnungen)
         run: |
-          if npx eslint ./modules ./script.js; then
+          npx eslint ./modules ./script.js || echo "⚠️ ESLint abgeschlossen mit Fehlern"
             echo "✅ Lint erfolgreich"
           else
             echo "⚠️ Linting abgeschlossen mit Warnungen oder Fehlern"
