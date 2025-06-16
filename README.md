@@ -110,7 +110,7 @@ py312\python.exe -m pip install pillow piexif
  - Verwende:
 
 ```yarn
-generate_exif.bat → Doppelklick
+ImageCreator.exe → Doppelklick
 ```
 
 > oder direkt:
@@ -131,7 +131,7 @@ py312\python.exe exif_gen.py
   - ✅ Variante 1: Alles automatisch
 
 ```yarn
-Doppelklick auf start_all.bat
+Doppelklick auf ServerStarter.exe
 ```
 
 - startet Proxy (Port 8000)
