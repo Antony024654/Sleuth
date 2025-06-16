@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Portable Python & Pip
+/py312/
+/get-pip.py
+
+# IDE & System-Dateien
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# Build & Export Files
+*.zip
+*.log
+*.bak
+*.tmp
+*.swp
+*.out
+
+# Webserver Caches
+.env
+.nyc_output/
+coverage/
+dist/
+
+# Auto-generierte EXIF-Bilder
+sleuth_test_exif.jpg
