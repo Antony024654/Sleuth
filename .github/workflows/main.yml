@@ -19,16 +19,31 @@ jobs:
         with:
           node-version: '18'
 
-      - name: 📦 Install Dependencies (optional)
+      - name: 📦 Install Dependencies (fallback tolerant)
         run: |
-          npm install || echo "Keine package.json gefunden – übersprungen"
+          if [ -f package.json ]; then
+            npm install
+          else
+            echo "⚠️ Keine package.json gefunden – npm install übersprungen"
+          fi
 
-      - name: ✅ Lint JavaScript (Syntaxprüfung)
+      - name: ✅ ESLint Syntaxprüfung
         run: |
-          npx eslint ./modules ./script.js || echo "Linting abgeschlossen mit Warnungen"
+          if npx eslint ./modules ./script.js; then
+            echo "✅ Lint erfolgreich"
+          else
+            echo "⚠️ Linting abgeschlossen mit Warnungen oder Fehlern"
+          fi
 
-      - name: 🧪 HTML Validation
-        uses: Cyb3r-Jak3/html5validator-action@v1
+      - name: 🧪 HTML Validierung
+        uses: Cyb3r-Jak3/html5validator-action@v0.4
         with:
           root: .
           log_level: WARNING
+
+      # Optional: Baustein für späteres Build
+      # - name: 🛠️ Build Step (optional)
+      #   run: npm run build || echo "Build nicht konfiguriert"
+
+      - name: 📄 Ergebnisübersicht
+        run: echo "✅ Sleuth CI abgeschlossen"
